@@ -35,7 +35,6 @@ export default function Feed() {
                 description: userData.description,
             }
         });
-        console.log(res);
     };
 
     return (
@@ -77,7 +76,7 @@ export default function Feed() {
             >
                 {posts.map((data) => (
                     <Card key={data.id} variant="outlined" className={styles.card}>
-                   <Vote />
+                        <Vote linkId={data.id} />
                         <a href={`//${data.url}`} target="_blank" rel="noreferrer">
                             {data.description}
                         </a>

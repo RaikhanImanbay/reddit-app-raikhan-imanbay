@@ -39,7 +39,6 @@ export default function Header() {
 
     function onUserSignedIn(token) {
         if (token) {
-            console.log('LOGGED IN');
             setOpenSignIn(false);
             setUserSignedIn(true);
             alert('Success! You have signed in!');

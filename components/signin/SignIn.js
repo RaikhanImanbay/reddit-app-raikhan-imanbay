@@ -29,7 +29,6 @@ export default function SignIn({ onUserSignedIn }) {
                 password: userData.password,
             }
         });
-        console.log(token);
         if (token?.data?.login?.token) {
             onUserSignedIn(token.data.login.token);
         }
